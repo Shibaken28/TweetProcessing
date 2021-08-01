@@ -1,0 +1,1 @@
+int r=30;void setup(){fullScreen();}void draw(){clear();int X=mouseX,Y=mouseY;for(int x=0;x<1441;x+=r){for(int y=0;y<901;y+=r){float d=PI/2,p=X-x,q=Y-y,l=sqrt(p*p+q*q);d=(X!=x?atan(q/p):(Y>y?-d:d));if(X>x)d-=PI;circle(x+cos(d)*r*log(l),y+sin(d)*r*log(l),r);}}}
