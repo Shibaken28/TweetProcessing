@@ -1,0 +1,1 @@
+int r=30;int X,Y,R;void setup(){fullScreen();}void draw(){background(0);fill(255);noStroke();R+=10;if(mousePressed){X=mouseX;Y=mouseY;R=0;}for(int x=0;x<2000;x+=r){for(int y=x%7;y<1500;y+=r){float d=dist(x,y,X,Y);circle(x,y,r-(R<d+500&&d<R?(-R+d)/10+50:0));}}}
